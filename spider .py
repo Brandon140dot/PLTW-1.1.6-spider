@@ -11,25 +11,20 @@ spider.speed(0)
 spider.pensize(40)
 spider.circle(20)
 
-# -------------------------
-# Variable Values (Fixed)
-# -------------------------
 
-number_of_legs = 8            # FIX 26: spiders have 8 legs
+number_of_legs = 8            
 leg_length = 70
-angle_between_legs = 360 / number_of_legs  # FIX 27: 360 degrees in a circle
+angle_between_legs = 360 / number_of_legs  
 
-# Make legs thinner
+
 spider.pensize(5)
 
-# -------------------------
-# Draw the legs (Fixed)
-# -------------------------
+
 
 count = 0
 while count < number_of_legs:
     spider.penup()
-    spider.goto(0, 20)        # FIX 25: move legs UP 20 pixels
+    spider.goto(0, 20)        
     spider.setheading(angle_between_legs * count)
     spider.pendown()
     spider.forward(leg_length)
